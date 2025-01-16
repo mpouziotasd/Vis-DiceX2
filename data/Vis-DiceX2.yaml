@@ -1,0 +1,14 @@
+# Temp Path:
+# Linux Work
+
+# path: ../dataset/dice-dataset
+train: train.txt
+val: valid.txt
+
+names: 
+  0: 1
+  1: 2
+  2: 3
+  3: 4
+  4: 5
+  5: 6
