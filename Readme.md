@@ -6,12 +6,15 @@
 - **CUDA Toolkit**: Compatible with Torch
 - **Torch**: Required for deep learning operations
 
-## Model Weights
-You can install the YOLO model weights Here: [Download Link](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing). Transfer the weights in the ``models/`` folder.
-
 ## Execution Guide
+### Install pre-trained model weights
+Install the pre-trained YOLO weights Here: [Google Drive Link](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing). Finally, transfer the weights in the ``models/`` folder.
+```
+cd VisDiceX2
+mkdir models
+```
 
-### Step 1: Create the Environment
+### Create the environment
 Run the following commands to create and activate a new Conda environment:
 
 ```bash
@@ -23,16 +26,20 @@ Install PyTorch and CUDA libraries (CUDA version: 12.4) using Conda:
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 ```
-
-### Install Dependencies
-```
-cd VisDiceX2
-pip install -r requirements
-```
-### Notes
 You can ensure torch is installed with cuda (inference/training on GPU) by executing the following code
 ```bash
 python utils/check_torch_cuda.py
 ```
+
+### Install dependencies
+```
+pip install -r requirements
+```
+
+### Run Code
+```
+streamlit run Vis-DiceX2.py
+```
+Good luck!
 ### 
 
