@@ -1,4 +1,4 @@
-# Vis-DiceX<sup>2</sup>
+# Vis-DiceX<sup>2</sup>: Computer Vision techniques for Dice in 2D images 
 > Vis-Dice<sup>2</sup> is a web-based computer vision tool built with Streamlit. It includes three core functionalities: **Inference**, **Training**, and **Evaluation** of pre-trained models to detect dice sides. Additionally, it identifies the color and calculates the sum of visible dice of that color.
 
 ---
@@ -39,7 +39,7 @@ This project should be compatible in both windows and linux, however, it should 
 > Evaluate pre-trained models or your own custom models. Visualize evaluation results as graphs.
 
 <div align="center">
-    <img src="figures/Model-EvaluationResults.png" alt="Evaluation Feature" width="350">
+    <img src="figures/Model-EvaluationResults.png" alt="Evaluation Feature" width="400">
 </div>
 
 ---
@@ -117,4 +117,4 @@ Good luck!
 ### To Do...
 - Performance: Improve subprocess code flow in Windows
 - Optimize: simplify readability of the code
-- Scalability: Upgrade code to perform computer vision in other tasks except dice detection 
+- Scalability: Upgrade code to perform computer vision in other tasks except dice detection
