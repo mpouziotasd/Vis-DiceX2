@@ -1,4 +1,4 @@
-# Vis-DiceX<sup>2</sup>
+# Vis-DiceX<sup>2</sup>: Computer Vision techniques for Dice in 2D images 
 > Vis-Dice<sup>2</sup> is a web-based computer vision tool built with Streamlit. It includes three core functionalities: **Inference**, **Training**, and **Evaluation** of pre-trained models to detect dice sides. Additionally, it identifies the color and calculates the sum of visible dice of that color.
 
 ---
@@ -17,6 +17,7 @@
    - [Install Dependencies](#install-dependencies)
    - [Run the Code](#run-the-code)
    - [Train your own model](#train-your-own-model)
+   - [Evaluate Models](#evaluate-models)
 4. [To Do](#to-do)
 
 
@@ -39,7 +40,7 @@ This project should be compatible in both windows and linux, however, it should 
 > Evaluate pre-trained models or your own custom models. Visualize evaluation results as graphs.
 
 <div align="center">
-    <img src="figures/Model-EvaluationResults.png" alt="Evaluation Feature" width="350">
+    <img src="figures/Model-EvaluationResults.png" alt="Evaluation Feature" width="400">
 </div>
 
 ---
@@ -105,16 +106,23 @@ Initially, you want to make sure everything is set up correctly to start your ow
 python utils/split_dataset.py
 ```
 
-You can train your own model by running Vis-DiceX2.py [[Run the Code](#run-the-code)]
+You can train your own model by running Vis-DiceX2.py [[Run the Code](#run-the-code)].
 
 Alternatively, (recommended as your first option) you can perform manual training using the below command:
 ```bash
 python train.py --cfg cfg/yolov8-M.yaml --data data/Vis-DiceX2.yaml --epochs 150 --imgsz 640 --batch 8 --name MyTrain-yolov8m
 ```
 
-Good luck!
+### Evaluate models
+To evaluate pre-trained or custom-made YOLO models, you can evaluate the models either manually using *`evaluation.py`*, or simply using evaluation mode by running Vis-DiceX2.py [[Run the Code](#run-the-code)]. The models should be located in *`models/`*.
+```
+python evaluate.py --cfg cfg/yolov8-M.yaml --data data/Vis-DiceX2.yaml --name MyEvaluation
+```
+
+
+## Good luck!
 
 ### To Do...
 - Performance: Improve subprocess code flow in Windows
 - Optimize: simplify readability of the code
-- Scalability: Upgrade code to perform computer vision in other tasks except dice detection 
+- Scalability: Upgrade code to perform computer vision in other tasks except dice detection
