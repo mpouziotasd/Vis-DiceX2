@@ -1,5 +1,5 @@
 # Vis-DiceX<sup>2</sup>
-> Vis-Dice<sup>2</sup> is a web-based computer vision tool built with Streamlit. It provides three core functionalities: **Inference**, **Training**, and **Evaluation** of pre-trained models to detect dice sides. Additionally, it identifies the color and calculates the sum of visible dice of that color.
+> Vis-Dice<sup>2</sup> is a web-based computer vision tool built with Streamlit. It includes three core functionalities: **Inference**, **Training**, and **Evaluation** of pre-trained models to detect dice sides. Additionally, it identifies the color and calculates the sum of visible dice of that color.
 
 ---
 
@@ -17,6 +17,8 @@
    - [Install Dependencies](#install-dependencies)
    - [Run the Code](#run-the-code)
    - [Train your own model](#train-your-own-model)
+4. [To Do](#to-do)
+
 
 ---
 
@@ -112,3 +114,7 @@ python train.py --cfg cfg/yolov8-M.yaml --data data/Vis-DiceX2.yaml --epochs 150
 
 Good luck!
 
+### To Do...
+- Performance: Improve subprocess code flow in Windows
+- Optimize: simplify readability of the code
+- Scalability: Upgrade code to perform computer vision in other tasks except dice detection 
