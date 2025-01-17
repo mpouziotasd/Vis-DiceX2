@@ -5,6 +5,7 @@
 
 ## Contents
 1. [Features](#features)
+   - [Compatibility](#compatibility)
    - [Inference](#inference)
    - [Training](#training)
    - [Evaluation](#evaluation)
@@ -15,11 +16,13 @@
    - [Install PyTorch](#install-pytorch)
    - [Install Dependencies](#install-dependencies)
    - [Run the Code](#run-the-code)
+   - [Train your own model](#train-your-own-model)
 
 ---
 
 ## Features
-
+#### Compatibility:
+This project should be compatible in both windows and linux, however, it should perform more smoothly in linux due to some internal subprocess problems with windows.
 ### Inference
 > Perform real-time inference using pre-trained YOLO models directly within the web tool. Select a model from the list of pre-trained models available [here](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing).
 
@@ -94,12 +97,18 @@ streamlit run Vis-DiceX2.py
 
 ### Train your own model
 Initially, you want to make sure everything is set up correctly to start your own training. 
+- Confirm the correctness of the parameter *`path`* in *`data/Vis-DiceX2.yaml`*. If your system already had ultralytics previously, using an absolute path to the dataset may resolve internal errors (e.g. absolute-path/Vis-DiceX2/dataset/dice-dataset*`)
+- if label/image paths are incorrect run the folowing code, once executed move files in *`split-dataset`* folder to *`dataset/dice-dataset`*.
+```bash
+python utils/split_dataset.py
+```
 
 You can train your own model by running Vis-DiceX2.py [[Run the Code](#run-the-code)]
 
-Alternatively, you can perform manual training using the below command:
+Alternatively, (recommended as your first option) you can perform manual training using the below command:
 ```bash
 python train.py --cfg cfg/yolov8-M.yaml --data data/Vis-DiceX2.yaml --epochs 150 --imgsz 640 --batch 8 --name MyTrain-yolov8m
 ```
+
 Good luck!
 

@@ -1,7 +1,6 @@
 # Temp Path:
-# Linux Work
 
-# path: ../dataset/dice-dataset
+path: ../dataset/dice-dataset
 train: train.txt
 val: valid.txt
 
