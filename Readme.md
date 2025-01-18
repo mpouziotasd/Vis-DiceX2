@@ -27,12 +27,12 @@
 #### Compatibility:
 This project should be compatible in both windows and linux, however, it should perform more smoothly in linux due to some internal subprocess problems with windows.
 ### Inference
-> Perform real-time inference using pre-trained YOLO models directly within the web tool. Select a model from the list of pre-trained models available [here](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing).
+Perform real-time inference using pre-trained YOLO models directly within the web tool. Select a model from the list of pre-trained models available [here](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing).
 
 ![Inference Feature](figures/InferenceFunction.jpeg)
 
 ### Training
-> Train your own model using [Ultralytics](https://github.com/ultralytics) and monitor training progress through real-time graphs.
+Train your own model using [Ultralytics](https://github.com/ultralytics) and monitor training progress through real-time graphs.
 
 ![Training Feature](figures/TrainingFunction.png)
 
