@@ -27,22 +27,29 @@
 #### Compatibility:
 This project should be compatible in both windows and linux, however, it should perform more smoothly in linux due to some internal subprocess problems with windows.
 ### Inference
-> Perform real-time inference using pre-trained YOLO models directly within the web tool. Select a model from the list of pre-trained models available [here](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing).
+Perform real-time inference using pre-trained YOLO models directly within the web tool. Select a model from the list of pre-trained models available [here](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing).
 
 ![Inference Feature](figures/InferenceFunction.jpeg)
 
 ### Training
-> Train your own model using [Ultralytics](https://github.com/ultralytics) and monitor training progress through real-time graphs.
+Train your own model using [Ultralytics](https://github.com/ultralytics) and monitor training progress through real-time graphs.
 
 ![Training Feature](figures/TrainingFunction.png)
 
 ### Evaluation
-> Evaluate pre-trained models or your own custom models. Visualize evaluation results as graphs.
+Evaluate pre-trained models or your own custom models. Visualize evaluation results as graphs.
 
 <div align="center">
     <img src="figures/Model-EvaluationResults.png" alt="Evaluation Feature" width="400">
 </div>
 
+mAP & Recall evaluation results for the pre-trained weights ([Google Drive](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing))
+| **Model**    |  **mAP<sup>val</sup><sub>50</sub>** | **mAP<sup>val</sup><sub>50-95</sub>** | **Recall<sup>val</sup>** |
+|--------------|-------------------------------------|---------------------------------------|--------------------------|
+| **YOLOv8m**  | 0.995                               | 0.882                                 | 0.993                    |
+| **YOLOv8x**  | 0.995                               | 0.924                                 | 1.000                    |
+| **YOLOv10m** | 0.971                               | 0.816                                 | 0.903                    |
+| **YOLOv10**  | 0.978                               | 0.840                                 | 0.920                    |
 ---
 
 ## Requirements
