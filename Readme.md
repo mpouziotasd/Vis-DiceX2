@@ -74,7 +74,7 @@ mkdir models
 Create and activate a Conda environment:
 
 ```bash
-conda create -n visdicex2 python=3.10 -y
+conda create -n visdicex2 python==3.10 -y
 conda activate visdicex2
 ```
 
