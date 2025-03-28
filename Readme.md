@@ -65,6 +65,11 @@ mAP & Recall evaluation results for the pre-trained weights ([Google Drive](http
 ### Install Pre-Trained Model Weights
 Download the pre-trained YOLO weights from [Google Drive](https://drive.google.com/drive/folders/14hduF6_zP0yVD9t2IzsBDQ6UFfifeM7M?usp=sharing) and move them into the `models/` folder:
 
+Pull Repository
+```bash
+git clone https://github.com/mpouziotasd/Vis-DiceX2.git --recursive 
+```
+
 ```bash
 cd VisDiceX2
 mkdir models
